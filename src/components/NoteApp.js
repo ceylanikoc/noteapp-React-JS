@@ -5,13 +5,12 @@ import AddNoteForm from './AddNoteForm'
 import NotesContext from '../context/notes-context';
 
 const NoteApp = () => {
-    //const[notes,setNotes] = useState([])
 
     const [notes,dispatch] = useReducer(notesReducer,[])
    
     useEffect(() => {
         const notesData = JSON.parse(localStorage.getItem('notes'))
-        if(notesData) {
+        if(notesData.lenght > 0) {
             dispatch({type: 'POPULATE_NOTES', notes: notesData })
         }
     },[])
