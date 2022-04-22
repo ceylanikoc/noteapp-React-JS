@@ -5,7 +5,7 @@ const AddNoteForm = () => {
 
     const[title,setTitle] = useState('')
     const[body,setBody] = useState('')
-    const { dispatch } =useContext(NotesContext)
+    const { dispatch } = useContext(NotesContext)
 
     const addNote = (e) => {
         e.preventDefault();
