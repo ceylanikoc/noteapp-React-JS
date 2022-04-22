@@ -1,9 +1,8 @@
-import React,{useState,useEffect,useReducer} from 'react'
+import React,{useEffect,useReducer} from 'react'
 import notesReducer from '../reducers/reducers'
 import NoteList from './NoteList'
 import AddNoteForm from './AddNoteForm'
 import NotesContext from '../context/notes-context';
-
 
 const NoteApp = () => {
     //const[notes,setNotes] = useState([])
